@@ -1,0 +1,17 @@
+<p>listar works!</p>
+<p>Empresa Filho : {{empresaFilho}}</p>
+<!-- Criando uma tabela dinamica para mostrar os valores de vetor PROFESSORES -->
+<table class="table">
+  <tr>
+      <th> ID </th>
+      <th> Nome </th>
+      <th> Email </th>
+  </tr>
+  <!-- criando um for para percorrer a  o vetor PROFESSORES  -->
+  <tr *ngFor="let p of professores">
+    <td> {{ p.id }} </td>
+    <td> {{ p.nome }} </td>
+    <td> {{ p.email }} </td>
+  </tr>
+</table>
+
